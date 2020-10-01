@@ -1,0 +1,53 @@
+/*
+write a program using switch case  to print
+1. Addition
+2.Even-odd
+3.N Natural number
+  */
+  #include<stdio.h>
+  #include<conio.h>
+  void main()
+  {
+      int choice,a,b,s;
+      printf("\n 1.Addition");
+      printf("\n 2.Even-odd");
+      printf("\n 3. Natural number");
+      
+      printf(" \n ********Enter your choice*********"); 
+      scanf("%d",&choice);
+      
+      switch(choice)
+      {
+          case 1:
+          printf("Enter two number");
+          scanf("%d%d",&a,&b);
+          s=a+b;
+          printf("\n Result is = %d ",s);
+          break;
+          
+          case 2:
+          printf("Enter number");
+          scanf("%d",&a);
+          if(a%2==0)
+              printf("Even number");
+          else
+              printf("Odd number");
+              break;
+          
+          case 3:
+          printf("enter number");
+          scanf("%d",&a);
+          for( s=1;s<=a;s++)
+           printf("%d",s); 
+          break;
+          default :
+          printf("invalid choice");
+
+        
+          
+          
+      }
+      getch();
+      
+  }
+ 
